@@ -30,7 +30,10 @@ h4 {
 }
 
 img {
+  /* makes images stick to the edges of its container */
   display: block;
+  /* makes images scale and size better. */
+  width: 100%;
 }
 
 @media (min-width: 960px) {
