@@ -14,7 +14,18 @@
         <h1>Picture This!</h1>
         <h4>My Really Cool Blog Post</h4>
       </div>
-      <img src="images/museum.jpg" alt="placeholder" />
+      <!-- adds picture element to let browser choose the most appropriate image based on the width -->
+      <picture>
+        <!-- when the viewport is 960px or wider the square image will be used -->
+        <source
+          srcset="
+        images/museum-square-960px.jpg,
+        images/museum-square-1280px.jpg
+        images/museum-square-1600px.jpg"
+          media="(min-width: 960px)"
+        />
+        <img src="images/museum.jpg" alt="placeholder" />
+      </picture>
     </header>
   </body>
 </html>
