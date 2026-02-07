@@ -19,12 +19,22 @@
         <!-- when the viewport is 960px or wider the square image will be used -->
         <source
           srcset="
-        images/museum-square-960px.jpg,
-        images/museum-square-1280px.jpg
-        images/museum-square-1600px.jpg"
+            images/museum-square-960px.jpg,
+            images/museum-square-1280px.jpg,
+            images/museum-square-1600px.jpg
+          "
           media="(min-width: 960px)"
         />
-        <img src="images/museum.jpg" alt="placeholder" />
+        <img
+          srcset="
+            images/museum-landscape-320x.jpg,
+            images/museum-landscape-480x.jpg,
+            images/museum-landscape-720x.jpg,
+            images/museum-landscape-960x.jpg
+          "
+          src="images/museum-landscape-320x.jpg"
+          alt="Interior view of a museum gallery"
+        />
       </picture>
     </header>
   </body>
