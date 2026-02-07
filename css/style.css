@@ -32,12 +32,18 @@ h4 {
 img {
   /* makes images stick to the edges of its container */
   display: block;
-  /* makes images scale and size better. */
+  /* makes images scale with its container */
   width: 100%;
+  /* prevents the image from strecthing */
+  height: auto;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /* makes the image at half the viewports */
+  img {
+    width: 50vw;
   }
 }
